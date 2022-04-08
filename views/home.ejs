@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.ibb.co/PDSpCYL/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eae5dc;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+.full{
+    /* margin-top: 10px; */
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d6cab2;
+    padding: 15px;
+    /* border-radius: 20px; */
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.full .logo span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.875rem;
+    padding-left: 10px;
+}
+.menu-items a{
+    text-decoration: none;
+    color: #e1644f;
+    padding: 0px 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.menu-items a:hover{
+    color: black;
+    font-size: 21px;
+}
+.menu-items a.active{
+    color: black ;
+}
+.hamburger{
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #101010;
+}
+.sign button{
+    padding: 13px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #e1644f;
+    color: white;
+    cursor: pointer;
+}
+@media screen and (max-width: 920px){
+    .menu-items{
+        display: none;
+    }
+    .hamburger{
+        display: inline;
+    }
+    .sign button{
+        display: none;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+.fullf{
+    height: 100px;
+    width: 100%;
+    background-color: #e1644f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+}
+.copyright{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100%;
+}
+.fa:hover {
+    opacity: 0.7;
+    transform: scale(1.5);
+}
+.fa-facebook {
+    color: white;
+}
+.fa-twitter {
+    color: white;
+}
+.fa-instagram {
+    color: white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.index{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.indexcont{
+    max-width: 360px;
+    padding: 0px 50px;
+}
+.sub{
+    padding: 5px 0px;
+}
+.sub1{
+    color: #5199d2;
+    font-size: 15px;
+}
+.sub2{
+    font-weight: 700;
+    font-size: 40px;
+}
+.sub3{
+    color: gray;
+}
+.vaccinate{
+    padding: 10px 25px;
+    margin-top: 20px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    background-color: #007c7c;
+    color: white;
+    transition: 0.40s background-color;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: transform 80ms ease-in;
+}
+.vaccinate:active{
+    transform: scale(0.95);
+}
+.vaccinate:hover{
+    background-color: #519ac9;
+}
+nav a{
+    text-decoration: none;
+    color: #e1644f;
+    padding: 0px 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+@media(min-width:925px)
+{
+    .lout{
+        display: none;
+    }
+}
+
+.menu-items {
+    
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  
+  .menu-items a:hover {
+    color: black;
+    font-size: 21px;
+  }
+  
+  /* nav menu button */
+  .menu-btn {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+    height: 100%;
+  }
+  .menu-btn__lines,
+  .menu-btn__lines::before,
+  .menu-btn__lines::after {
+    width: 1.5rem;
+    height: 0.1rem;
+    background-color: #111111;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-btn__lines::before,
+  .menu-btn__lines::after {
+    content: "";
+    position: absolute;
+  }
+  .menu-btn__lines::before {
+    transform: translateY(-0.5rem);
+  }
+  .menu-btn__lines::after {
+    transform: translateY(0.5rem);
+  }
+  /* animation */
+  .menu-btn.open .menu-btn__lines {
+    transform: translateX(2rem);
+    background-color: transparent;
+  }
+  .menu-btn.open .menu-btn__lines::before {
+    transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+    background-color: #ffffff;
+  }
+  .menu-btn.open .menu-btn__lines::after {
+    transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+    background-color: #ffffff;
+  }
+
+  @media (max-width: 925px) {
+    /* .custom-shape-divider svg {
+      width: calc(250% + 1.3px);
+      height: 150px;
+    } */
+    .header a {
+      font-size: 1rem;
+    }
+    .menu-btn {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 7%;      
+    }
+    .menu-items {
+      flex-direction:column;
+      justify-content: space-around;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;display: none;
+      height: 100vh;
+      transform: translateX(100vw);
+      background-color: #d6cab2;
+      transition: transform 0.3s ease-in-out;
+    }
+    .menu-items.open {
+      transform: translateX(0);
+      display: flex;
+      /* display: none; */
+    }
+   
+    .menu-items li {
+      width: 100vw;
+      height: 100%;
+    }
+    .menu-items li a {
+      color: #ffffff;
+      font-size: 5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+    .menu-items li a:hover {
+      color: #111111;
+    }
+  }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="full">
+            <div class="logo">
+                <a href="https://ibb.co/WVT9K3h"><img src="https://i.ibb.co/PDSpCYL/logo.png" height="50px" width="50px" alt="logo" border="0"></a>
+                <span>VACCINATOR</span>
+            </div>
+
+            <div class="menu-btn">
+                <div class="menu-btn__lines"></div>
+            </div>   
+    
+            
+                <nav class="menu-items">
+                    <a href="/home" class="active">Home</a>
+                    <a href="/volunteers">Volunteers</a>
+                    <a href="/vaccinate">Vaccinate</a>
+                    <a href="/contactus">Contact Us</a>
+                    <a class="lout" href="/login.htm">Log Out</a>
+                </nav>
+                
+           
+            <div class="sign">
+                <a href="/login"><button>Log Out</button></a>
+            </div>
+            
+        </div>
+    </header>
+    <div class="index">
+        <div class="indexcont">
+            <h4 class="sub1 sub">—Hello, animal lover!</h4>
+            <p class="sub2 sub">Welcome to Vaccinator.</p>
+            <p class="sub3 sub">We want you to vaccinate street animals as if they were your own.</p>
+            <a href="/contactus"><button class="vaccinate">Vaccinate Now!</button></a>
+        </div>
+        <a href="https://ibb.co/4Twtpf1"><img src="https://i.ibb.co/VS09TNw/mdoc-2022-03-27-11-23-38.png" height="600px" width="800px" alt="mdoc-2022-03-27-11-23-38" border="0"></a>
+    </div>
+    <footer>
+        <div class="fullf">
+            <div class="copyright">
+                <span>&#169;</span>2022 by Vaccinator.
+                <p>IIIT Lucknow</p>
+                <p>Chak Ganjaria, C. G. City, Uttar Pradesh 226002</p>
+            </div>
+            <div class="social_media">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const menuBtn = document.querySelector(".menu-btn");
+const menuItems = document.querySelector(".menu-items");
+const menuItem = document.querySelectorAll(".menu-item");
+
+// main toggle
+menuBtn.addEventListener("click", () => {
+  toggle();
+});
+
+// toggle on item click if open
+menuItem.forEach((item) => {
+  item.addEventListener("click", () => {
+    if (menuBtn.classList.contains("open")) {
+      toggle();
+    }
+  });
+});
+
+function toggle() {
+  menuBtn.classList.toggle("open");
+  menuItems.classList.toggle("open");
+}
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,466 @@
+<!-- class="d-block w-100" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.ibb.co/PDSpCYL/logo.png">
+    <script src="https://kit.fontawesome.com/a6a8fc63a8.js" crossorigin="anonymous"></script>
+    <title>Vaccinate</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+.fullf{
+    height: 100px;
+    width: 100%;
+    background-color: #e1644f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+}
+.copyright{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100%;
+}
+.fa:hover {
+    opacity: 0.7;
+    transform: scale(1.5);
+}
+.fa-facebook {
+    color: white;
+}
+.fa-twitter {
+    color: white;
+}
+.fa-instagram {
+    color: white;
+}
+.card{
+    border: black 2px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eae5dc;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+.full{
+    /* margin-top: 10px; */
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d6cab2;
+    padding: 15px;
+    /* border-radius: 20px; */
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.full .logo span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.875rem;
+    padding-left: 10px;
+}
+.menu-items a{
+    text-decoration: none;
+    color: #e1644f;
+    padding: 0px 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.menu-items a:hover{
+    color: black;
+    font-size: 21px;
+}
+.menu-items a.active{
+    color: black ;
+}
+.hamburger{
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #101010;
+}
+.sign button{
+    padding: 13px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #e1644f;
+    color: white;
+    cursor: pointer;
+}
+@media screen and (max-width: 920px){
+    .menu-items{
+        display: none;
+    }
+    .hamburger{
+        display: inline;
+    }
+    .sign button{
+        display: none;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+.doginfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #007c7c;
+    /* margin-top: 50px; */
+    padding: 20px;
+    text-align: center;
+}
+.doginfo .info{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.card{
+    border-radius: 10px;
+    box-shadow: 7px 5px rgba(43, 41, 41, 0.362);
+    margin-top: 20px;
+    max-width: 200px;
+    background-color: #d6cab2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.card img{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  
+}
+.card p{
+    background-color: #007c7c;
+    color: white;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 8px;
+}
+.carrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carrow i{
+    position: relative;
+    left: 80px;
+}
+@media screen and (max-width: 960px){
+    .carrow i{
+        display: none;
+    }
+}
+@media screen and (max-width: 800px){
+    .cards{
+        flex-direction: column;
+    }
+
+}
+.button button{
+    padding: 10px 25px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    background-color: #007c7c;
+    color: white;
+    transition: 0.40s background-color;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: transform 80ms ease-in;
+    text-align: center;
+}
+button:active{
+    transform: scale(0.95);
+}
+button:hover{
+    background-color: #519ac9;
+}
+.button{
+    text-align: center;
+    margin-bottom: 50px;
+}
+nav a{
+    text-decoration: none;
+    color: #e1644f;
+    padding: 0px 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+@media(min-width:925px)
+{
+    .lout{
+        visibility: collapse;
+    }
+}
+
+.menu-items {
+    
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .menu-items li a {
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .menu-items a:hover {
+    color: black;
+    font-size: 21px;
+  }
+  
+  /* nav menu button */
+  .menu-btn {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu-btn__lines,
+  .menu-btn__lines::before,
+  .menu-btn__lines::after {
+    width: 1.5rem;
+    height: 0.1rem;
+    background-color: #111111;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-btn__lines::before,
+  .menu-btn__lines::after {
+    content: "";
+    position: absolute;
+  }
+  .menu-btn__lines::before {
+    transform: translateY(-0.5rem);
+  }
+  .menu-btn__lines::after {
+    transform: translateY(0.5rem);
+  }
+  /* animation */
+  .menu-btn.open .menu-btn__lines {
+    transform: translateX(2rem);
+    background-color: transparent;
+  }
+  .menu-btn.open .menu-btn__lines::before {
+    transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+    background-color: #ffffff;
+  }
+  .menu-btn.open .menu-btn__lines::after {
+    transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+    background-color: #ffffff;
+  }
+
+  @media (max-width: 925px) {
+    .custom-shape-divider svg {
+      width: calc(250% + 1.3px);
+      height: 150px;
+    }
+    .header a {
+      font-size: 1rem;
+    }
+    .menu-btn {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 7%;      
+    }
+    .menu-items {
+      flex-direction: column;
+      justify-content: space-around;
+      position: absolute;
+      top: 0;
+      right: 0;display: none;
+      left: 0;
+      height: 100vh;
+      transform: translateX(100vw);
+      background-color: #d6cab2;
+      transition: transform 0.3s ease-in-out;
+    }
+    .menu-items.open {
+      transform: translateX(0);display: flex;
+    }
+    .menu-items li {
+      width: 100vw;
+      height: 100%;
+    }
+    .menu-items li a {
+      color: #ffffff;
+      font-size: 5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+    .menu-items li a:hover {
+      color: #111111;
+    }
+  }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="full">
+            <div class="logo">
+                <a href="https://ibb.co/WVT9K3h"><img src="https://i.ibb.co/PDSpCYL/logo.png" height="50px" width="50px" alt="logo" border="0"></a>
+                <span>VACCINATOR</span>
+            </div>
+            
+            <div class="menu-btn">
+                <div class="menu-btn__lines"></div>
+            </div> 
+
+                <nav  class="menu-items">
+                    <a href="/home">Home</a>
+                    <a href="/volunteers">Volunteers</a>
+                    <a href="/vaccinate"class="active">Vaccinate</a>
+                    <a href="/contactus">Contact Us</a>
+                    <a class="lout" href="/login">Log Out</a>
+                </nav>
+            
+            <div class="sign">
+                <a href="/login"><button>Log Out</button></a>
+            </div>
+           
+        </div>
+    </header>
+    <div class="doginfo">
+        <div class="info">
+            <p>Total Vaccinations till now</p>
+            <span id="vtn">180000</span>
+        </div>
+        <div class="info">
+            <p>Vaccinations done today</p>
+            <span id="vdt">100000</span>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="carrow">
+            <div class="card">
+                <img src="https://i.ibb.co/9YCFdGZ/Untitled.jpg" height="200px" width="200px" alt="Untitled" border="0">
+                <p>Book an appointment here or walk into any vaccination center</p>
+            </div>
+            <i class="fa-solid fa-play"></i>
+        </div>
+        <div class="carrow">
+            <div class="card">
+                <img src="https://i.ibb.co/7VV8mDj/Untitled-2.jpg" height="200px" width="200px" alt="Untitled-2" border="0">
+                <p>Get your vaccination safely at the time of your appointment</p>
+            </div>
+            <i class="fa-solid fa-play"></i>
+        </div>
+        <div class="carrow">
+            <div class="card">
+                <img src="https://i.ibb.co/nzRGHrT/Untitled-1.jpg" height="200px" width="200px" alt="Untitled-1" border="0">
+                <p>Wait for us to contact you for dose #2</p>
+            </div>
+        </div>
+</div><br>
+<div class="button">
+   <a href="/contactus"><button class="vaccinate">Vaccinate Now!</button></a>
+</div>
+    <footer>
+        <div class="fullf">
+            <div class="copyright">
+                <span>&#169;</span>2022 by Vaccinator.
+                <p>IIIT Lucknow</p>
+                <p>Chak Ganjaria, C. G. City, Uttar Pradesh 226002</p>
+            </div>
+            <div class="social_media">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        let counts=setInterval(updated, 500);
+        let upto=180000;
+        function updated(){
+            var count= document.getElementById("vtn");
+            count.innerHTML=++upto;
+        }
+
+
+        let counts2=setInterval(updated2, 500);
+        let upto2=10000;
+        function updated2(){
+            var count= document.getElementById("vdt");
+            count.innerHTML=++upto2;
+        }
+
+        const menuBtn = document.querySelector(".menu-btn");
+const menuItems = document.querySelector(".menu-items");
+const menuItem = document.querySelectorAll(".menu-item");
+
+// main toggle
+menuBtn.addEventListener("click", () => {
+  toggle();
+});
+
+// toggle on item click if open
+menuItem.forEach((item) => {
+  item.addEventListener("click", () => {
+    if (menuBtn.classList.contains("open")) {
+      toggle();
+    }
+  });
+});
+
+function toggle() {
+  menuBtn.classList.toggle("open");
+  menuItems.classList.toggle("open");
+}
+
+    </script>
+</body>
+</html>

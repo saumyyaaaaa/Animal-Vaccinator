@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,800');
+*{
+  font-family: 'Ubuntu';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.inputbox input{
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+      0 10px 10px rgba(0,0,0,0.22);
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.signup{
+  background: linear-gradient(to left, #eb8e14, #ff9d00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  text-align: center;
+}
+.signup a{
+    color: #FFFFFF;
+}
+button{
+    margin: 10px 0px;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: aquamarine;
+    transition: 0.25s;
+}
+button:active{
+    transform: scale(0.95);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="signup">
+            <h1>Already have an account?</h1>
+            <span><a href="\login">LogIn Here!</a></span>
+        </div>            
+        
+        <div class="form">
+            <form action="/register" method="POST">
+                <h1>SIGN UP</h1>
+                <div class="inputbox">
+                    <input type="email" placeholder="Email" name="email">
+                </div>
+                <div class="inputbox">
+                    <input type="password" placeholder="Create Password" name="password">
+                </div>
+                <div class="inputbox">
+                    <input type="password" placeholder="Confirm Password">
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container mt-5">
+    <a href="/" class="btn btn-primary mb-5">Go Back</a>
+    <h1>Register Account</h1>
+    <form action="/register" method="POST">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+</div> -->

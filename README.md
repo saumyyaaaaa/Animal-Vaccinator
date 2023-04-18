@@ -23,5 +23,5 @@ Sumit  -  Database, MongoDB, Hosting, Express JS, Backend, Contact Us-Backend
 Manan  -  Design, Volunteers, Header-Responsive Menu, JS
 Aditya -  Header, HomePage, Footer, Design, Content
 Ria    -  Login, Signup, Vaaccinate, Contact Us
-Ananya -  Login, Signup, Vaaccinate, JS, Content
+Ananya -  Login, Signup, Vaaccinate, JS, Content, Header
 Shruti -  Header, Contact Us Page, Volunteers, Footer 
